@@ -2,4 +2,5 @@
 
 
   - Assignments will be saved weekly
+  - Week 1 folder put in.
 
