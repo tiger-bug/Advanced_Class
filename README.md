@@ -1,7 +1,5 @@
-## Welcome to GitHub Pages
+# This is the readme file for Advanced Programming
 
 
-### Markdown
-
-I used Markdown
+  - Assignments will be saved weekly
 
