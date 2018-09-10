@@ -45,37 +45,41 @@
   popupAnchor: [1, -34],
   shadowSize: [41, 41]
 });
+
+   var orangeIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
     
-  var Erios = L.marker([38.7717436,-90.5817963],{icon: greenIcon}).addTo(mymap);
-  var Parrots=L.marker([38.7519436,-90.5625607],{icon: redIcon}).addTo(mymap);
-  
-//  var circle = L.circle([41.871, -87.628], {
-  //  color: 'green',
-    //fillColor: '#0099aa',
-   // fillOpacity: 0.5,
-   // radius: 500
- // }).addTo(mymap);
-    
- //var polygon = L.polygon([
-   // [41.871, -87.628],
-   // [41.8, -87.628],
-   // [41.9, -87.621]
- // ],
-  //{
-  //fillColor:'red',
-   //color:'orange'
-   //}
- // ).addTo(mymap);
-    
-  Erios.bindPopup("</b>Erio's").openPopup();
-  Parrots.bindPopup("</b>Parrots").openPopup();
+var yellowIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
     
 
     
-  
- 
-  //circle.bindPopup("I am a circle.");
- // polygon.bindPopup("I am a polygon.");
+  var Erios = L.marker([38.7717436,-90.5817963],{icon: greenIcon}).addTo(mymap);
+  var Parrots=L.marker([38.7519436,-90.5625607],{icon: redIcon}).addTo(mymap);
+  var El_Mezon=L.marker([38.7751627,-90.6832551]).addTo(mymap);
+  var Sushi=L.marker([38.771666,-90.6268025],{icon: orangeIcon}).addTo(mymap);
+    var QT=L.marker([38.757489,-90.5885477],{icon: yellowIcon}).addTo(mymap);
+    
+    
+  Erios.bindPopup("</b>Erio's").openPopup();
+  Parrots.bindPopup("</b>Parrots").openPopup();
+  El_Mezon.bindPopup("</b>El Mezon").openPopup();
+  Sushi.bindPopup("</b>A nice sushi place").openPopup();
+    QT.bindPopup("</b>Quick Trip.  Yes I eat here, don't judge!").openPopup();
+    
+    
 
     
   var popup = L.popup();
