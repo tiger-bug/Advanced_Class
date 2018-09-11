@@ -28,8 +28,11 @@
     }).addTo(map);
   // load GeoJSON from an external file
   $.getJSON("https://raw.githubusercontent.com/spiegelss/Advanced_Class/master/Week_1/San_Fransisco/sf_crime.geojson",function(data){
+    function onEachFeature(feature,layer){
+      layer.bindPopup("crime type: "+feature.properties.title)
+    }
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
   });
  
   </script>
