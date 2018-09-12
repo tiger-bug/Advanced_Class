@@ -31,7 +31,7 @@
     }).addTo(map);
     
   map.setZoom(12);
-  $.getJSON("rodents.geojson",function(data){
+  $.getJSON("D:/Advanced_Class/Week_1/HeatMap/rodents.geojson",function(data){
     var locations = data.features.map(function(rat) {
       // the heatmap plugin wants an array of each location
       var location = rat.geometry.coordinates.reverse();
