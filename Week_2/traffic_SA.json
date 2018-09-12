@@ -1,0 +1,69 @@
+{
+  "currentVersion" : 10.61, 
+  "serviceItemId" : "927f0b948fcf400eaf1c13d35239a7b1", 
+  "serviceDescription" : "City of Santa Ana traffic volumes for major streets.", 
+  "hasVersionedData" : false, 
+  "supportsDisconnectedEditing" : false, 
+  "hasStaticData" : false, 
+  "maxRecordCount" : 1000, 
+  "supportedQueryFormats" : "JSON", 
+  "supportsVCSProjection" : false, 
+  "capabilities" : "Query", 
+  "description" : "City of Santa Ana - Average daily traffic volumes for 2007 - 2015 - counts are based on a 24-hour period.", 
+  "copyrightText" : "City of Santa Ana - PWA - Traffic Division", 
+  "spatialReference" : {
+    "wkt" : "PROJCS[\"NAD_1983_StatePlane_California_6_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"false_easting\",6561666.666666667],PARAMETER[\"false_northing\",1640416.666666667],PARAMETER[\"central_meridian\",-116.25],PARAMETER[\"standard_parallel_1\",33.88333333333333],PARAMETER[\"standard_parallel_2\",32.78333333333333],PARAMETER[\"scale_factor\",1.0],PARAMETER[\"latitude_of_origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]"
+  }, 
+  "initialExtent" : {
+    "xmin" : 6039362.5951169711, 
+    "ymin" : 2208797.0004789028, 
+    "xmax" : 6087980.8612361494, 
+    "ymax" : 2232766.6205069339, 
+    "spatialReference" : {
+      "wkt" : "PROJCS[\"NAD_1983_StatePlane_California_6_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"false_easting\",6561666.666666667],PARAMETER[\"false_northing\",1640416.666666667],PARAMETER[\"central_meridian\",-116.25],PARAMETER[\"standard_parallel_1\",33.88333333333333],PARAMETER[\"standard_parallel_2\",32.78333333333333],PARAMETER[\"scale_factor\",1.0],PARAMETER[\"latitude_of_origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]"
+    }
+  }, 
+  "fullExtent" : {
+    "xmin" : 6046219.6030317275, 
+    "ymin" : 2200034.4777825885, 
+    "xmax" : 6081123.8533213921, 
+    "ymax" : 2231207.9470438696, 
+    "spatialReference" : {
+      "wkt" : "PROJCS[\"NAD_1983_StatePlane_California_6_FIPS_0406_Feet\",GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"false_easting\",6561666.666666667],PARAMETER[\"false_northing\",1640416.666666667],PARAMETER[\"central_meridian\",-116.25],PARAMETER[\"standard_parallel_1\",33.88333333333333],PARAMETER[\"standard_parallel_2\",32.78333333333333],PARAMETER[\"scale_factor\",1.0],PARAMETER[\"latitude_of_origin\",32.16666666666666],UNIT[\"Foot_US\",0.3048006096012192]]"
+    }
+  }, 
+  "allowGeometryUpdates" : true, 
+  "units" : "esriFeet", 
+  "supportsAppend" : true, 
+  "size" : 286720, 
+  "syncEnabled" : false, 
+  "supportsApplyEditsWithGlobalIds" : false, 
+  "editorTrackingInfo" : {
+    "enableEditorTracking" : false, 
+    "enableOwnershipAccessControl" : false, 
+    "allowOthersToQuery" : true, 
+    "allowOthersToUpdate" : true, 
+    "allowOthersToDelete" : false, 
+    "allowAnonymousToQuery" : true, 
+    "allowAnonymousToUpdate" : true, 
+    "allowAnonymousToDelete" : true
+  }, 
+  "xssPreventionInfo" : {
+    "xssPreventionEnabled" : true, 
+    "xssPreventionRule" : "InputOnly", 
+    "xssInputRule" : "rejectInvalid"
+  }, 
+  "layers" : [
+    {
+      "id" : 0, 
+      "name" : "Traffic Volumes", 
+      "parentLayerId" : -1, 
+      "defaultVisibility" : true, 
+      "subLayerIds" : null, 
+      "minScale" : 0, 
+      "maxScale" : 0, 
+      "geometryType" : "esriGeometryPolyline"
+    }
+  ], 
+  "tables" : []
+}
