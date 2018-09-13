@@ -50,7 +50,7 @@
       // * time - the time of the event
 
       var template = {
-        title: "crime data",
+        title: "crime data: Crime {UCR_OFFENSE}",
         content: "Month {MONTH}, Year {YEAR}."
         
       };
@@ -72,11 +72,11 @@
           symbolLayers: [{
             type: "icon", // autocasts as new IconSymbol3DLayer()
             material: {
-              color: [238, 69, 0, 0.75]
+              color: [100, 6, 100, 22]
             },
             outline: {
-              width: 0.5,
-              color: "white"
+              width: 0.25,
+              color: "orange"
             },
             size: "12px"
           }]
