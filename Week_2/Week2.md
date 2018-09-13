@@ -3,4 +3,4 @@
 -map links: <br/>
 * https://spiegelss.github.io/Advanced_Class/Week_2/Feature_Layer/ <br/>
 * https://spiegelss.github.io/Advanced_Class/Week_2/WebMap/
-* https://spiegelss.github.io/Advanced_Class/Week_2/WebMap/heatmap.html
+* https://spiegelss.github.io/Advanced_Class/Week_2/HeatMap
