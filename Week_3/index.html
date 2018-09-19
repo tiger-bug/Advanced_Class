@@ -23,8 +23,9 @@
       "esri/WebScene",
       "esri/views/SceneView",
       "esri/Camera",
+      "esri/widgets/Home",
       "dojo/domReady!"
-    ], function(WebScene, SceneView, Camera) {
+    ], function(WebScene, SceneView, Camera, Home) {
     
       /*var map = new Map({
         basemap: "streets",
@@ -35,11 +36,20 @@
          id:"8046207c1c214b5587230f5e5f8efc77" 
         }
       });
-      
+   
+      //var camera_home=new Camera({
+        ///position: [
+        //  -71.1167, // lon
+        //  42.3770, // lat
+         // 2500// elevation in meters
+       // ],
+        //tilt:0,
+        //heading: 0
+      //});
       var camera = new Camera({
         position: [
-          -71.060217, // lon
-           42.382655, // lat
+           -71.1167, // lon
+          42.3770, // lat
           2500// elevation in meters
         ],
         tilt:0,
@@ -50,42 +60,51 @@
         map: scene,
         camera: camera
     });
-    
+    var homeBtn = new Home({
+       view: view
+    });
+    view.ui.add(homeBtn, "top-left");
+      //var homebtn=new Home({
+       // view: camera_home
+     // });
     [v1, v2,v3].forEach(function(button) {
       button.style.display = 'flex';
       view.ui.add(button, 'top-right');
+     // view.ui.add(homebtn, "top-left");
     });
-	
-    var camera2 = new Camera({
+	    var camera1 = new Camera({
 	        position: {
-          x: -71.057996,
-          y: 42.363461,
+          x: -71.062164,
+          y: 42.393426,
           z: 2500
         },
-        tilt: 0,
+        tilt: 30,
+        heading: 180
+	});
+    var camera2 = new Camera({
+	        position: {
+          x: -71.060691,
+          y: 42.345739,
+          z: 2500
+        },
+        tilt: 30,
         heading: 0
 	});
 		
-	//var camera3 = camera
-	var camera3=new Camera({
+	var camera3 = new Camera({
 	        position: {
-          x: -71.052638,
-          y: 42.340470,
-          z: 2500
-        },
-        tilt: 0,
-        heading: 0
-	});
-	    v3.addEventListener('click', function() {
-      // reuse the default camera position already established in the homeBtn
-      view.goTo({
-        position: {
-          x: -71.007929,
-          y: 42.359948, 
+          x: -70.992843,
+          y: 42.358426,
           z: 2500
         },
         tilt: 30,
         heading: 270
+	});
+	    v3.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+        target: camera3
+ 
       });
     });
     v2.addEventListener('click', function() {
@@ -94,11 +113,11 @@
 		target:camera2
       });
     });
-    
+      //view.ui.add(homeBtn,'top-left');
     v1.addEventListener('click', function() {
       // reuse the default camera position already established in the homeBtn
       view.goTo({
-        target:camera3
+        target:camera1
       });
     });
     });
@@ -107,8 +126,8 @@
 
 <body>
   <div id="viewDiv"></div>
-  <button id="v1" class="off">South Boston, USA</button>
-  <button id="v2" class="off">North Boston, USA</button>
-  <button id="v3" class="off">Boston Airport, USA</button>
+  <button id="v1" class="off">North Boston</button>
+  <button id="v2" class="off">Middle of Boston</button>
+  <button id="v3" class="off">Airport</button>
 </body>
 </html>
