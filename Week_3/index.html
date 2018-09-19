@@ -37,15 +37,6 @@
         }
       });
    
-      //var camera_home=new Camera({
-        ///position: [
-        //  -71.1167, // lon
-        //  42.3770, // lat
-         // 2500// elevation in meters
-       // ],
-        //tilt:0,
-        //heading: 0
-      //});
       var camera = new Camera({
         position: [
            -71.1167, // lon
@@ -60,10 +51,7 @@
         map: scene,
         camera: camera
     });
-    var homeBtn = new Home({
-       view: view
-    });
-    view.ui.add(homeBtn, "top-left");
+
       //var homebtn=new Home({
        // view: camera_home
      // });
@@ -72,6 +60,10 @@
       view.ui.add(button, 'top-right');
      // view.ui.add(homebtn, "top-left");
     });
+        var homeBtn = new Home({
+       view: view
+    });
+    view.ui.add(homeBtn, "top-left");
 	    var camera1 = new Camera({
 	        position: {
           x: -71.062164,
