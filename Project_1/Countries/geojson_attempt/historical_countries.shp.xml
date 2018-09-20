@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20180920</CreaDate><CreaTime>11390300</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Conversion Tools.tbx\JSONToFeatures" Date="20180920" Time="113903">JSONToFeatures D:\Advanced_Class\Project_1\Countries\countries_ww2.geojson D:\Advanced_Class\Project_1\Countries\geojson_attempt\historical_countries.shp Polygon</Process></lineage></DataProperties></Esri></metadata>
