@@ -31,10 +31,19 @@
       layer.bindPopup("Name: "+feature.properties.Name+"<br><br>"+"Date:  "+feature.properties.Date+"<br><br>"+"Description: "+feature.properties.Description+"<br><br>"+feature.properties.link
                      )
     }
+   
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
   });
- 
+  $.getJSON("https://raw.githubusercontent.com/spiegelss/Advanced_Class/master/Project_1/Countries/geojson_attempt/historic_countries_1941.geojson",function(data){
+    function onEachFeature(feature,layer){
+      layer.bindPopup("Name: "+feature.properties.NAME+"<br><br>"+"Empire:  "+feature.properties.EMPIRE
+                     )
+    }
+   
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
+  });
   </script>
 </body>
 </html>
