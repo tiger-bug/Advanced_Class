@@ -32,6 +32,15 @@
                      )
     }
    
+     
+     //style function
+    function style_country(feature) {
+	switch (feature.properties.EMPIRE){
+	case 'German Empire (as of 1941)': return {color: "#4c0909"};
+	case 'Soviet Union (as of 1941)': return {color: "#f40000"};
+}};
+     
+     
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
   });
