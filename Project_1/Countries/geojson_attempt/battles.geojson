@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Invasion of Poland",
+        "Location": "Danzig",
+        "Date": "Date(September 1, 1939)",
+        "Description": "This was the invasion of Poland, the start of WWII.  The invasion began in Danzig.  This is the introduction of the Blitzkrieg (lightening war).",
+        "link": "https://www.youtube.com/watch?v=uNOqSSP1o94"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.6466,
+          54.352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Siege of Leningrad",
+        "Location": "Soviet Union",
+        "Date": "Date(September 8, 1941)",
+        "Description": "The siege of Leningrad begins in September.  It lasted 872 days, making it the longest siege in history.",
+        "link": "https://www.youtube.com/watch?v=A9TsF7F7-tA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.994802,
+          60.328819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Siege of Leningrad",
+        "Location": "Soviet Union",
+        "Date": "Date(October 2, 1941)",
+        "Description": "Codename 'Operation Typhoon', this was the Nazi invasion of Mosocow. Lasted until January 2, 1942",
+        "link": "https://www.youtube.com/watch?v=hAfcOYKMPP4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.606201171875,
+          55.7642131648377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Battle of Stalingrad",
+        "Location": "Soviet Union",
+        "Date": "Date(August 22, 1942)",
+        "Description": "Invasion of the city of Stalingrad.  This was the turning point of the war.",
+        "link": "https://www.youtube.com/watch?v=tob405FKrRY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.516667,
+          48.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Battle of Kursk",
+        "Location": "Soviet Union",
+        "Date": "Date(July 5, 1943)",
+        "Description": "Largest tank engagement in history.",
+        "link": "https://www.youtube.com/watch?v=22xpNBJCS4U"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.1873512,
+          51.7373314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Battle of Smolensk",
+        "Location": "Soviet Union",
+        "Date": "Date(August 7, 1943)",
+        "Description": "Liberation of the city of Smolensk.",
+        "link": "https://www.youtube.com/watch?v=rGNs8zLxipA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.0401001,
+          54.7817993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Battle of Kiev",
+        "Location": "Soviet Union",
+        "Date": "Date(November 3, 1943)",
+        "Description": "Continued Soviet Operations in liberating the Ukraine.",
+        "link": "https://www.youtube.com/watch?v=vd6ngRVovaI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5238,
+          50.45466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vistula–Oder Offensive",
+        "Location": "Poland/East Germany",
+        "Date": "Date(January 12, 1945)",
+        "Description": "Invasion of East Germany by the Soviet Union.",
+        "link": "https://www.youtube.com/watch?v=16VxXEYtyd0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.749997,
+          54.4499982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Battle of Seelow Heights",
+        "Location": "Germany",
+        "Date": "Date(April 16, 1945)",
+        "Description": "One of the final battles of the Eastern front.  Soviet forces faced heavy casualties.",
+        "link": "https://www.youtube.com/watch?v=36XisaKZgkk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.765625,
+          52.696361078274485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"Name": "Battle of Berlin",
+        "Location": "Germany",
+        "Date": "Date(April 16, 1945)",
+        "Description": "Final battle of the Eastern Front.  Hitler and other major German leaders commit suicide.",
+        "link": "https://www.youtube.com/watch?v=Qo95rTt9ikU"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.386840820312498,
+          52.51956352925745
+        ]
+      }
+    }
+  ]
+}
