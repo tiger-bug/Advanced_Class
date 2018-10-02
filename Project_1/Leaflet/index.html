@@ -25,34 +25,57 @@
       attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
       maxZoom: 17
     }).addTo(map);
+    
+var redMarker = {
+    radius: 10,
+    fillColor: "#ff0030",
+    color: "#000000"
+  };
+    
+    function myStyle(feature) {
+  return {
+    fillColor: setMyColor(feature.properties.color),
+    weight: 2,
+    opacity: 1,
+    color: 'white',
+    dashArray: '3',
+    fillOpacity: 0.7
+  };
+} 
+    
   // load GeoJSON from an external file
    $.getJSON("https://raw.githubusercontent.com/spiegelss/Advanced_Class/master/Project_1/Countries/geojson_attempt/battles.geojson",function(data){
     function onEachFeature(feature,layer){
+      
       layer.bindPopup("Name: "+feature.properties.Name+"<br><br>"+"Date:  "+feature.properties.Date+"<br><br>"+"Description: "+feature.properties.Description+"<br><br>"+feature.properties.link
                      )
+
     }
    
      
      //style function
-    function style_country(feature) {
-	switch (feature.properties.EMPIRE){
-	case 'German Empire (as of 1941)': return {color: "#4c0909"};
-	case 'Soviet Union (as of 1941)': return {color: "#f40000"};
-}};
+
      
      
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
+    L.geoJson(data,{
+        pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, redMarker);
+      },
+      onEachFeature: onEachFeature}).addTo(map);
   });
   $.getJSON("https://raw.githubusercontent.com/spiegelss/Advanced_Class/master/Project_1/Countries/geojson_attempt/historic_countries_1941.geojson",function(data){
+    
     function onEachFeature(feature,layer){
       layer.bindPopup("Name: "+feature.properties.NAME+"<br><br>"+"Empire:  "+feature.properties.EMPIRE
                      )
-    }
-   
+    
+}
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data,{onEachFeature: onEachFeature}).addTo(map);
+    L.geoJson(data,{onEachFeature: onEachFeature},).addTo(map);
   });
+    // L.geoJson(data,{onEachFeature: onEachFeature},).addTo(map);
+ // });
   </script>
 </body>
 </html>
