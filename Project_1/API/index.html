@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,33 +24,28 @@
     require([
         "esri/Map",
         "esri/views/MapView",
-
         "esri/layers/FeatureLayer",
         "esri/widgets/Legend",
         "esri/widgets/Attribution",
         
-
         "dojo/domReady!"
       ],
       function(
         Map, MapView,
         FeatureLayer,Legend
       ) {
-
         var map = new Map({
           basemap: "satellite"
         });
-
         var view = new MapView({
           container: "viewDiv",
           map: map,
-
          zoom: 7,
          center:[18.897,52.043]
         });
         
     var template = { 
-        title: "Country",
+        title: "Countries",
         content: [{
     
           type: "fields",
@@ -97,7 +93,6 @@
           }]
         }]
       };
-
         
         
           var countryRenderer = {
@@ -111,14 +106,12 @@
             }
           }
         };
-
         /********************
          * Add feature layer
          ********************/
-
         
         var featureLayer = new FeatureLayer({
-          url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/historic_countries/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=&returnGeometry=true&returnCentroid=false&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=",
+          url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/battle_with_countries_and_symbology/FeatureServer/1/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=&returnHiddenFields=false&returnGeometry=true&returnCentroid=false&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=JMdhUzwmoewr9K3F5jbkHVP2lNe-bnsePhssJvzcx-Nu4IEIo8Ad3HgQmH_yLzvgIgZByODkyk6rs6_PBIFcreqZd1TBVIAd8jGamYJS7qn23F9qTsGkbynl_VLMD6MiIsm2QD4s5L11Di86_AkYsajPttE-8RFuTIauNKUACRX2TCHsPfYLnH4lTTiv7oj1IVXDbLqc15SoepXqw30cWhDRzehB0NCtvViAhuyXqUYrUImXuHXoV7m_1ZS9c4Sz",
           outFields: ["*"],
         popupTemplate: template,
           
@@ -126,14 +119,12 @@
         });
          
          var featureLayer2 = new FeatureLayer({
-          url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/ww2_battles/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=&returnHiddenFields=false&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=hAT6Sw-Q2juiqVduTYnmJg6-nb5zW5EdavpYryaqd5v9o-GrqlyC5cNrYhjodCKBa0at-zpfHZw4CY0-lcnrUSpqZ1-_FEVU5vBlhyhPLtnyvr1mwK4mOdV5eT0uNhEzoohAXt6YaLChdErO28TFuHBtp6KHnw_qiM020l94S8NINtuJfLvpsDNOFbFdGNvpN8W9q7jxO5WK8RXK7W_g_OJOpGrX5xwfkoo4NoSY76Mdwjp-60VwH8Qsgk27TxSk",
+          url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/battle_with_countries_and_symbology/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=&returnHiddenFields=false&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=html&token=JMdhUzwmoewr9K3F5jbkHVP2lNe-bnsePhssJvzcx-Nu4IEIo8Ad3HgQmH_yLzvgIgZByODkyk6rs6_PBIFcreqZd1TBVIAd8jGamYJS7qn23F9qTsGkbynl_VLMD6MiIsm2QD4s5L11Di86_AkYsajPttE-8RFuTIauNKUACRX2TCHsPfYLnH4lTTiv7oj1IVXDbLqc15SoepXqw30cWhDRzehB0NCtvViAhuyXqUYrUImXuHXoV7m_1ZS9c4Sz",
           popupTemplate: template_1
         });
-
         map.add(featureLayer);
         map.add(featureLayer2);
         
-
       });
   </script>
 </head>
