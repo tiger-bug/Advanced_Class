@@ -1,0 +1,14 @@
+create a numpy array per country
+
+get list of countries
+
+combine dataframes into one.
+
+loop through list of countries and create array
+
+apply mk test on array
+
+create layer, add to map
+
+
+
