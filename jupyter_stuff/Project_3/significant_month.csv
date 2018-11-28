@@ -1,0 +1,12 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-11-25T16:37:31.410Z,34.3042,45.7402,10,6.3,mww,,22,0.81,0.87,us,us1000hwdw,2018-11-28T11:10:30.279Z,"20km SSW of Sarpol-e Zahab, Iran",earthquake,5.9,1.8,0.073,18,reviewed,us,us
+2018-11-21T18:21:43.908Z,59.9732,-153.3083,145.5,5.7,ml,,,,0.47,ak,ak20386247,2018-11-24T20:58:37.880Z,"65km SSW of Redoubt Volcano, Alaska",earthquake,,0.1,,,reviewed,ak,ak
+2018-11-19T20:18:42.510Z,32.2065,-115.2535,10.95,4.82,mw,29,149,0.2168,0.38,ci,ci38138175,2018-11-25T14:40:31.040Z,"8km WSW of Alberto Oviedo Mota, B.C., MX",earthquake,0.79,31.61,,6,reviewed,ci,ci
+2018-11-18T20:25:45.970Z,-17.8972,-178.9,533.6,6.7,mww,,72,2.906,1.02,us,us1000htm5,2018-11-19T18:58:10.040Z,"245km SE of Lambasa, Fiji",earthquake,10.5,6.9,0.056,31,reviewed,us,us
+2018-11-15T23:09:01.050Z,-56.2373,-122.0421,10,6.3,mww,,16,27.207,0.87,us,us1000hsfz,2018-11-16T22:00:25.040Z,"Southern East Pacific Rise",earthquake,10.1,1.7,0.06,27,reviewed,us,us
+2018-11-15T20:02:21.960Z,-56.778,-25.3862,10,6.3,mww,,26,6.779,0.97,us,us1000hsaf,2018-11-16T22:24:18.040Z,"111km E of Visokoi Island, South Georgia and the South Sandwich Islands",earthquake,9.5,1.7,0.056,31,reviewed,us,us
+2018-11-11T14:03:59.560Z,15.5653,-49.8719,10,6.3,mww,,50,9.69,0.65,us,us1000hqkp,2018-11-18T15:50:46.028Z,"North Atlantic Ocean",earthquake,9.2,1.9,0.048,42,reviewed,us,us
+2018-11-09T01:49:40.200Z,71.6226,-11.2399,10,6.8,mww,,37,7.846,0.94,us,us1000hpim,2018-11-14T17:15:11.915Z,"119km NW of Olonkinbyen, Svalbard and Jan Mayen",earthquake,7.8,1.9,0.073,18,reviewed,us,us
+2018-11-08T21:07:01.460Z,-34.3508,116.8388,10,5.2,mww,,61,1.458,0.97,us,us1000hpej,2018-11-24T06:39:45.251Z,"64km ESE of Manjimup, Australia",earthquake,8.7,1.8,0.089,12,reviewed,us,us
+2018-11-01T22:19:51.540Z,-19.5882,-69.2923,102,6.2,mww,,19,0.122,1.16,us,us2000i5mj,2018-11-06T14:49:16.125Z,"113km NE of Iquique, Chile",earthquake,5.8,1.8,0.048,41,reviewed,us,us
+2018-10-30T02:13:39.550Z,-39.0541,174.9766,227.28,6.1,mww,,33,0.548,0.87,us,us1000hiup,2018-11-02T23:42:20.768Z,"64km ESE of Waitara, New Zealand",earthquake,5.9,4.5,0.062,25,reviewed,us,us
