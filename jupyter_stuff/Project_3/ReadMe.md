@@ -1,4 +1,4 @@
-#Project 3 links:
+# Project 3 links:
 
 * https://github.com/spiegelss/Advanced_Class/blob/master/jupyter_stuff/Project_3/Project_3.ipynb
 
